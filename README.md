@@ -1,24 +1,26 @@
 # Suave Color Palette Generator
 
-Mintbean Hackathon - 06 / 08 / 20
+Mintbean Hackathon - Redo
 
 ## About the Project
 
-Goal was to create a color palette generator in 4 hours or less. 
+Goal was to build upon an existing color palette generator in 4 hours or less.  
 
-I placed first! :tada:
+See the project [here](https://kmbarnett.github.io/colour-picker-mintbean-hackathon/)
 
-See the project [here](https://5edede9ee1b44c0007822d3e--heuristic-williams-fba968.netlify.app/)
+![Palette Generator](https://user-images.githubusercontent.com/56409751/88356045-c4f28900-cd23-11ea-9104-8eed613ea9c3.png)
 
-![Palette Generator](https://github.com/xynyx/colour-picker-mintbean-hackathon/blob/master/docs/screenshot.png)
-![First Place](https://github.com/xynyx/colour-picker-mintbean-hackathon/blob/master/docs/me.jpeg)
+
+## Features Added
+- Space to get Random colors 
+- Brighten and Darken can go up and down 
+- Click to Copy Hex Codes
+- Slight UX/UI redesign
 
 ## Built With
 - React
 - TinyColor
 
-## Resources
-- [Hackathon Winner Post](https://www.linkedin.com/posts/mintbean_careerhack-hackathons-careerhack-activity-6675885447970906112-Qe7W)
 
 ## Acknowledgements
 - [Mintbean Hackathon](https://www.mintbean.io/)
