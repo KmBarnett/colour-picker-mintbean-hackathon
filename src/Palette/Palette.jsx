@@ -68,6 +68,15 @@ export default function Palette({
     });
   }
 
+  let buttonColor = tinycolor
+    .mostReadable(hex, ['#000000', '#ffffff'], {
+      includeFallbackColors: true,
+      level: "AAA",
+      size: "small",  
+    })
+    .toRgbString();
+
+
   return (
     <section id="container">
       {colorPalette}
@@ -77,6 +86,7 @@ export default function Palette({
         variant="primary"
         size="lg"
         block
+        style={{ background: buttonColor, color: hex }}
       >
         Random
       </Button>
