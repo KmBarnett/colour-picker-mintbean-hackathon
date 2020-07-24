@@ -1,15 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Piedra',
+  cursive;
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 html {
