@@ -18,7 +18,7 @@ export default function Colors({ hex, complement }) {
         className="color"
         data-tip="Click to Copy"
       >
-        <ReactTooltip />
+        <ReactTooltip className='tooltip' />
         <div style={{ color: complement }} className="hex-value">
           <p className={`copied-${copied} copied`}>Copied</p>
           <button style={{ color: complement }} className="hex-copy">
