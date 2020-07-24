@@ -1,10 +1,9 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import './Navbar.css'
 
 export default function Settings({
-  setRandom,
   changeVariation,
-  changeSetting,
   changeBrightness,
   changeSaturation,
   brightness,
@@ -16,9 +15,7 @@ export default function Settings({
   };
 
   const changeSettings = (e) => {
-    const settingType = e.target.getAttribute("value");
     const settingAmount = e.target.name;
-    changeSetting(settingType);
     
 
     switch (settingAmount) {
@@ -103,9 +100,6 @@ export default function Settings({
             </Nav.Link>
           </Navbar.Collapse>
         </Nav>
-        <Nav.Link id="random" onClick={() => setRandom()}>
-          Random
-        </Nav.Link>
       </Navbar>
     </div>
   );
