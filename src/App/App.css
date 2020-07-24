@@ -60,10 +60,12 @@
   font-size: 1.5em;
 }
 
-.random-btn {
+#container button.random-btn {
   font-size: 1.5em;
   position: absolute;
   bottom: 1rem;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .copied {
