@@ -2,17 +2,19 @@ import React from "react";
 import Colors from "./../Colors/Colors";
 import "./Palette.css";
 import uniqid from "uniqid";
+import { Button } from "react-bootstrap";
 
 const tinycolor = require("tinycolor2");
 
 export default function Palette({
   hex,
   variation,
-  setting,
   brightness,
   saturation,
+  setRandom
 }) {
   let colors;
+
   // Using a switch to set variation type set
   switch (variation) {
     case "tetrad":
@@ -39,7 +41,6 @@ export default function Palette({
 
   // Using a dictionary object to set setting
   const settings = (color) => {
-
     return tinycolor(color)
       .brighten(brightness)
       .saturate(saturation)
@@ -67,5 +68,18 @@ export default function Palette({
     });
   }
 
-  return <div id="container">{colorPalette}</div>;
+  return (
+    <section id="container">
+      {colorPalette}
+      <Button
+        className="random-btn"
+        onClick={setRandom}
+        variant="primary"
+        size="lg"
+        block
+      >
+        Random
+      </Button>
+    </section>
+  );
 }

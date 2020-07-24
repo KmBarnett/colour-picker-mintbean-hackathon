@@ -1,10 +1,10 @@
 .color {
   flex: 1;
+  display: flex;
   border: 1px solid rgba(0, 0, 0, 0.089);
-  height: 90.95vh;
+  height: 89.55vh;
 }
 
 #container {
   display: flex;
-  height: 100%;
 }
